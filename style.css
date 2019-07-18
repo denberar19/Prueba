@@ -1,0 +1,273 @@
+/*display: flex = tienen a su disposición algunas nuevas propiedades que aportan mayor flexibilidad a su comportamiento
+flex-shrink (hijo) y flex-wrap del padre, permiten adaptar y distribuir los elementos de manera dinámica en el espacio horizontal
+ disponible hasta ocupar todo el espacio, y luego pasar a ocupar dinamicamente las siguiente filas hacia abajo.
+
+ flex-direction: ;
+ flex-box horizontal : justify-content: ;
+ flex-box vertical: align-items:  ;
+
+ align-self: alinear elementos individualmente
+
+
+
+*/
+
+
+header
+  {background: green;}
+
+header img{
+  object-fit:cover;
+}
+
+  body{
+    font-family: 'Source Sans Pro';
+    margin: 0;
+  }
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Crismont text';
+  font-weight: normal;
+  /*font-style: italic;*/
+}
+h1{
+
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: -.10px;
+  margin: 0;
+  /*margin: 10px 500px 10px 10px;*/
+}
+.hero{
+  height: 300px;
+  /*background-image: url('images/1.jpeg');*/
+  background-color: #1b2127;
+  color: white;
+  /*background-size: 600px 400px;*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: right;*/
+  /*border: 1px solid gray;*/
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  }
+
+  .hero-image{
+    object-fit: cover;
+  }
+
+.portfolio{
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+.project{
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+/*border-top-left-radius: 50px;
+border-bottom-right-radius: 50px;*/
+/*margin: 10px;*/
+  margin-bottom:15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-date,
+.project-url{
+  margin: 10px 0;
+}
+
+.project-tittle{
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.project-description{
+  font-size: 20px;
+  font-family: cursive;
+}
+.project-details{
+  width: 500px;5
+}
+.project-imageContainer{
+  width: 500px;
+  object-fit: cover;
+
+}
+.project strong{
+  font-family: 'Crismont text';
+}
+h1 strong{
+  color: #026fff;
+    }
+h2{
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 40px
+    }
+.header{
+  height: 80px;
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    }
+.Menu{
+  height: inherit;
+    }
+.header ol{
+  display: flex;
+  height: inherit;
+    }
+
+.header ol li{
+  height: inherit;
+    }
+
+.header a{
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height:inherit;
+  padding: 0 10px;
+    }
+
+ol, ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+    }
+figure{
+  margin: 0;
+    }
+.box{
+    width: 50px;
+    height: 50px;margin: 5px;
+    border: 1px solid red;
+    }
+.footer{
+    color: white;
+    background-color:#1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*vertical-align: middle*/
+    }
+.footer a{
+  color: white;
+    }
+.event-list{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+    }
+.event-list-tittle{
+  margin: 20px;
+
+
+    }
+.event{
+  margin: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  width: 440px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f4fbff;
+    }
+  .event img{
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px
+    }
+  .event-details{
+
+    margin:20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    }
+  .event-description{
+    text-align: left;
+    }
+
+}
+  .event-url{
+    border: 1px solid #056fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    border: 5px;
+    color: #056fff;
+    }
+    .contact{
+      background-color: #056fff;
+      color: white;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .social-link{
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      margin: 0 10px;
+
+    }
+    .social-link.facebook{
+      background-image: url('images/facebook.png');
+      width: 50px;
+      height: 50px;
+    }
+    .social-link.instagram{
+      background-image: url('images/instagram.png');
+      width: 50px;
+      height: 50px;
+    }
+    .form-email input{
+      border-color: gray;
+        border-radius: 5px;
+        border-style: solid;
+      padding: 10px 20px 10px 25px;
+      background-image: url('images/email.png');
+      background-size: 15px 15px;
+      background-repeat: no-repeat;
+      background-position-y: center;
+      background-position-x: 5px;
+    }
+    .form-email button{
+      display: block;
+      background: transparent;
+      color: white;
+      padding: 10px 0px;
+      border-radius: 5px;
+      width: 100px;
+      margin-top: 10px;
+    }
+    .form-email h3{
+      font-family: 'Source'
+    }
+
+    .container{
+    /*  border: 1px solid red; */
+      width: 1000px;
+      margin: 0 auto;
+      display: inherit;
+      justify-content: inherit;
+      align-items: inherit;
+      height: inherit;
+      flex-wrap: inherit;
+
+    }
